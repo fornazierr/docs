@@ -30,14 +30,14 @@ The event objects returned from the Events API endpoints have the same structure
 | `id` | `string` | Unique identifier for the event. |
 | `type` | `string` | The type of event. Events uses PascalCase for the name. |
 | `actor` | `object` | The user that triggered the event. |
-| `actor.id` | `string` | The unique identifier for the actor. |
+| `actor.id` | `integer` | The unique identifier for the actor. |
 | `actor.login` | `string` | The username of the actor. |
 | `actor.display_login` | `string` | The specific display format of the username. |
 | `actor.gravatar_id` | `string` | The unique identifier of the Gravatar profile for the actor. |
 | `actor.url` | `string` | The REST API URL used to retrieve the user object, which includes additional user information. |
 | `actor.avatar_url` | `string` | The URL of the actor's profile image. |
 | `repo` | `object` | The repository object where the event occurred.  |
-| `repo.id` | `string` | The unique identifier of the repository. |
+| `repo.id` | `integer` | The unique identifier of the repository. |
 | `repo.name` | `string` | The name of the repository, which includes the owner and repository name. For example, `octocat/hello-world` is the name of the `hello-world` repository owned by the `octocat` personal account. |
 | `repo.url` | `string` | The REST API URL used to retrieve the repository object, which includes additional repository information. |
 | `payload` | `object` | The event payload object is unique to the event type. See the event type below for the event API `payload` object. |
